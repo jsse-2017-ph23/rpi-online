@@ -1,0 +1,25 @@
+{
+  "name": "rpi-online",
+  "version": "1.0.0",
+  "description": "Online/offline detection and write state to firebase",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsse-2017-ph23/rpi-online.git"
+  },
+  "scripts": {
+    "lint": "eslint index.js"
+  },
+  "author": "Holi0317 <holliswuhollis@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsse-2017-ph23/rpi-online/issues"
+  },
+  "homepage": "https://github.com/jsse-2017-ph23/rpi-online#readme",
+  "dependencies": {
+    "firebase-admin": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.2.0"
+  }
+}
