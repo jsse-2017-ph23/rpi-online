@@ -23,11 +23,11 @@ const database = admin.database()
 const connectedRef = database.ref('.info/connected')
 const statusRef = database.ref(STATUS_PATH)
 
-statusRef.onDisconnect().set('offline')
-
 connectedRef.on('value', snap => {
   if (snap.val()) {
     console.log('Server went online. Setting status to online')
     statusRef.set('online')
+  } else {
+    statusRef.onDisconnect().set('offline')
   }
 })
